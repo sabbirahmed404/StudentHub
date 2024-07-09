@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Sign Up</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Note -->
+
+    <div style="background:rgb(76, 67, 136);padding:5px">
+        <h2 style="text-align:center; color: #ffffff;">GREEN UNIVERSITY OF BANGLADESH</h2>
+    </div>
+
+    <div class="header" style="background-image: url('Student\ HUB.png');">
+        <h1>Student HUB</h1>
+        <p>Connecting <b>Students</b> of <b>Green University of
+        Bangladesh</b> through <b>Institutes</b>.</p>
+        </div>
+
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.php">Home</a>
+        <a href="registration.html">Register</a>
+        <a href="clubs.html">Club Lists</a>
+        <a href="login_signup.html" style="background-color: #ffffff; color: #333;">Club Login</a>
+        <a href="#">About</a>
+    </div>
+    <!-- Login / Sign Up Form -->
+    <div class="form-container">
+        <div class="form-header">
+            <button id="login-btn" class="active">Login</button>
+            <button id="signup-btn">Sign Up</button>
+        </div>
+        <div id="login-form" class="form-content">
+            <form action="login.php" method="POST">
+                <input type="text" name="student_id" placeholder="Student ID" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+                <p id="login-error" class="error-message"></p>
+                <a href="#">Forgot Password?</a>
+            </form>
+        </div>
+        <div id="signup-form" class="form-content" style="display: none;">
+            <form action="signup.php" method="POST" enctype="multipart/form-data">
+                <input type="text" name="student_id" placeholder="Student ID" required>
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" name="department" placeholder="Department" required>
+                <input type="text" name="contact" placeholder="Contact" required>
+                <input type="text" name="address" placeholder="Address" required>
+                <input type="file" name="profile_picture">
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Sign Up</button>
+                <p id="signup-error" class="error-message"></p>
+            </form>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <h2>Made By Sabbir Ahmed</h2>
+        <a href="https://github.com/sabbirahmed404"><img src="25231.png" alt="Sabbir Ahmed's Github" style="width:42px;height:42px;"></a>
+        <a href="https://www.linkedin.com/in/msabbir-ahmed/"><img src="linkedin.png" alt="Sabbir Ahmed's Linkedin" style="width:42px;height:42px;"></a>
+  
+      </div>
+    <script src="script.js"></script>
+</body>
+</html>

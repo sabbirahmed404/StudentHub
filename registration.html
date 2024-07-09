@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,
+initial-scale=1.0"
+    />
+    <title>Club Registration</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Note -->
+    <div style="background: rgb(76, 67, 136); padding: 5px">
+      <h2 style="text-align: center; color: #ffffff">
+        GREEN UNIVERSITY OF BANGLADESH
+      </h2>
+    </div>
+    <!-- Header -->
+    <div class="header" style="background-image: url('Student\ HUB.png')">
+      <h1>Student HUB</h1>
+      <p>
+        Connecting <b>Students</b> of
+        <b>Green University of Bangladesh</b> through <b>Institutes</b>.
+      </p>
+    </div>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+      <a href="index.php">Home</a>
+      <a href="registration.html" style="background-color: #ffffff; color: #333"
+        >Register</a
+      >
+      <a href="clubs.html">Club Lists</a>
+      <a href="login_signup.html">Club Login</a>
+      <a href="#">About</a>
+    </div>
+    <div class="formbold-main-wrapper">
+      <div class="formbold-form-wrapper">
+        <img src="" alt="" />
+        <form
+          action="register_club.php"
+          method="POST"
+          enctype="multipart/form-data"
+        >
+          <div class="formbold-mb-3">
+            <label for="club_name" class="formbold-form-label"
+              >Name of the Club</label
+            >
+            <input
+              type="text"
+              name="club_name"
+              id="club_name"
+              class="formbold-form-input"
+              required
+            />
+          </div>
+          <div class="formbold-mb-3">
+            <label for="members" class="formbold-form-label"
+              >Number of Members</label
+            >
+            <input
+              type="number"
+              name="members"
+              id="members"
+              class="formbold-form-input"
+              required
+            />
+          </div>
+          <div class="formbold-mb-3">
+            <label for="club_email" class="formbold-form-label"
+              >Club Email</label
+            >
+            <input
+              type="email"
+              name="club_email"
+              id="club_email"
+              class="formbold-form-input"
+              required
+            />
+          </div>
+          <div class="formbold-mb-3">
+            <label for="contact_number" class="formbold-form-label"
+              >Contact Number</label
+            >
+            <input
+              type="text"
+              name="contact_number"
+              id="contact_number"
+              class="formbold-form-input"
+              required
+            />
+          </div>
+          <div class="formbold-mb-3">
+            <label for="club_logo" class="formbold-form-label"
+              >Club Logo (image under 100 KB, optional)</label
+            >
+            <input
+              type="file"
+              name="club_logo"
+              id="club_logo"
+              class="formbold-form-input"
+            />
+          </div>
+          <div class="formbold-mb-3">
+            <label for="responsible_person" class="formbold-form-label"
+              >Person Responsible</label
+            >
+            <input
+              type="text"
+              name="responsible_person"
+              id="responsible_person"
+              class="formbold-form-input"
+              required
+            />
+          </div>
+          <div class="formbold-mb-3">
+            <label for="Student_ID" class="formbold-form-label"
+              >Student ID</label
+            >
+            <input
+              type="text"
+              name="Student_ID"
+              id="Student_ID"
+              class="formbold-form-input"
+              required
+            />
+          </div>
+          <div class="formbold-mb-3">
+            <label for="department" class="formbold-form-label"
+              >Department</label
+            >
+            <input
+              type="text"
+              name="department"
+              id="department"
+              class="formbold-form-input"
+              required
+            />
+          </div>
+          <div class="formbold-mb-3">
+            <label for="designation" class="formbold-form-label"
+              >Designation in the Club</label
+            >
+            <input
+              type="text"
+              name="designation"
+              id="designation"
+              class="formbold-form-input"
+              required
+            />
+          </div>
+          <button class="formbold-btn">Submit</button>
+        </form>
+      </div>
+    </div>
+    <style>
+      /* Include existing styles for consistent design */
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial;
+        margin: 0;
+      }
+      .header {
+        padding: 60px;
+        text-align: center;
+        background: #201c3c;
+        color: white;
+      }
+      .navbar {
+        display: flex;
+        background-color: #333;
+      }
+      .navbar a {
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+        text-align: center;
+      }
+      .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .side {
+        flex: 30%;
+        background-color: #f1f1f1;
+        padding: 20px;
+      }
+      .main {
+        flex: 70%;
+        background-color: white;
+        padding: 20px;
+      }
+      .fakeimg {
+        background-color: #aaa;
+        width: 100%;
+        padding: 20px;
+      }
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+      }
+      @media screen and (max-width: 700px) {
+        .row,
+        .navbar {
+          flex-direction: column;
+        }
+      }
+      /* Additional styles for the form */
+      .formbold-main-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 48px;
+      }
+      .formbold-form-wrapper {
+        margin: 0 auto;
+        max-width: 570px;
+        width: 100%;
+        background: white;
+        padding: 40px;
+      }
+      .formbold-form-label {
+        color: #201c3c;
+        font-size: 14px;
+        line-height: 24px;
+        display: block;
+        margin-bottom: 10px;
+      }
+      .formbold-form-input {
+        width: 100%;
+        padding: 13px 22px;
+        border-radius: 5px;
+        border: 1px solid #dde3ec;
+        background: #ffffff;
+        font-weight: 500;
+        font-size: 16px;
+        color: #201c3c;
+        outline: none;
+        resize: none;
+        margin-bottom: 15px;
+      }
+      .formbold-form-input::placeholder {
+        color: rgba(83, 99, 135, 0.5);
+      }
+      .formbold-form-input:focus {
+        border-color: #201c3c;
+        box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+      }
+      .formbold-btn {
+        font-size: 16px;
+        border-radius: 5px;
+        padding: 14px 25px;
+        border: none;
+        font-weight: 500;
+        background-color: #201c3c;
+        color: white;
+        cursor: pointer;
+        margin-top: 25px;
+      }
+      .formbold-btn:hover {
+        box-shadow: 0px 3px 8px rgba(32, 28, 60, 0.05);
+      }
+    </style>
+    <div class="footer">
+      <h2>Made By Sabbir Ahmed</h2>
+      <a href="https://github.com/sabbirahmed404"><img src="25231.png" alt="Sabbir Ahmed's Github" style="width:42px;height:42px;"></a>
+      <a href="https://www.linkedin.com/in/msabbir-ahmed/"><img src="linkedin.png" alt="Sabbir Ahmed's Linkedin" style="width:42px;height:42px;"></a>
+
+    </div>
+  </body>
+</html>
