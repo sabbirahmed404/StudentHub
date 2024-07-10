@@ -11,7 +11,7 @@
         <h2 style="text-align:center; color: #ffffff;">GREEN UNIVERSITY OF BANGLADESH</h2>
     </div>
 
-    <div class="header">
+    <div class="header" style="background-image: url('Student\ HUB.png');">
         <h1>Student HUB</h1>
         <p>Connecting <b>Students</b> of <b>Green University of Bangladesh</b> through <b>Institutes</b>.</p>
     </div>
