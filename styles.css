@@ -1,19 +1,36 @@
+/* Reset some basic styles */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+
+}
 /* Common styles */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
     background: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
+
 
 .header {
     padding: 60px;
+    color: #fff;
     text-align: center;
     background: #201c3c;
-    color: white;
+    background-size: cover;
+    background-position: center;
 }
 
+.header h1 {
+    margin-bottom: 10px;
+}
 .navbar {
     display: flex;
+    justify-content: center;
     background-color: #333;
 }
 
@@ -35,11 +52,74 @@ body {
     color: #333;
 }
 
-.footer {
+.form-container {
+        background-color: #ffffff;
     padding: 20px;
-    text-align: center;
-    background: #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 600px;
 }
+
+.form-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.form-header button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-header button.active, .form-header button:hover {
+    background-color: #575757;
+}
+
+.form-content {
+    display: none;
+}
+
+.form-content.active {
+    display: block;
+}
+
+.form-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-content input[type="text"], .form-content input[type="email"], .form-content input[type="password"], .form-content input[type="file"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-content button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+.form-content button:hover {
+    background-color: #575757;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+}
+
 
 .main {
     padding: 20px;
@@ -120,4 +200,11 @@ body {
 
 .poke-btn:hover {
     background: #201c3c;
+}
+.footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
 }
